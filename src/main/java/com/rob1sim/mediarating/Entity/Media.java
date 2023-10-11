@@ -11,7 +11,7 @@ public class Media {
     private String name;
     private String description = "";
     private String imagePath = "";
-    private int rating = 0;
+    private float rating = 0;
     @ManyToOne
     private Type type;
 
@@ -54,7 +54,7 @@ public class Media {
         return type;
     }
 
-    public int getRating() {
+    public float getRating() {
         return rating;
     }
 }

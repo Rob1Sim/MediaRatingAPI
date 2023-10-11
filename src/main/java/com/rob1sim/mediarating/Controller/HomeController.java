@@ -32,4 +32,8 @@ public class HomeController {
         userService.createUser(registerDTO.toUserEntity(),2L);
         return new ResponseEntity<>("User register successfuly !", HttpStatus.OK);
     }
+    @GetMapping("/test")
+    public ResponseEntity<String> test(){
+        return new ResponseEntity<>("Test", HttpStatus.OK);
+    }
 }
